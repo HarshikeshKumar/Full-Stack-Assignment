@@ -10,7 +10,7 @@ function App() {
       return;
     }
     const response = await fetch(
-      `http://localhost:5000/api/greet?name=${name}`
+      `https://full-stack-assignment-project.vercel.app/api/greet?name=${name}`
     );
     const data = await response.json();
     setMessage(data.message || data.error);
